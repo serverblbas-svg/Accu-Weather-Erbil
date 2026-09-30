@@ -454,7 +454,7 @@
                     const h = Math.floor(diffSecs / 3600);
                     const m = Math.floor((diffSecs % 3600) / 60);
                     const s = diffSecs % 60;
-                    const timeStr = `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+                    const timeStr = `${String(h).padStart(0, '0')}:${String(m).padStart(0, '0')}:${String(s).padStart(0, '0')}`;
                     document.getElementById('prayerCountdown').textContent = `بۆ بەیانی: ${timeStr} ماوە`;
                 }
             }
